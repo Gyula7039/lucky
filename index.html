@@ -2,68 +2,88 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Főoldal | Lucky</title>
     <link rel="icon" type="image/x-icon" href="img/logo_cropped.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
   
-  <header class="navbar">
-    <nav>
-        <img src="img/logo_cropped.png" alt="logo" id="logo">
-        <ul>
-            <li><a href="index.html"><h3 >Főoldal</h3></a></li>
-            <li><a href="suti.html"><h3>Sütik</h3></a></li>
-            <li><a href="kave.html"><h3>Kávék</h3></a></li>
-        </ul>
-    </nav>
-</header>
+  <nav class="navbar navbar-expand-sm" style="background-color:lightcoral">
+    <div class="container-fluid">
+      <img src="img/logo_cropped.png" alt="logo" id="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon">Menü</span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: white;">Főoldal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="suti.html" style="color: white;">Sütemények</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kave.html" style="color: white;">Kávék</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  
 
-    <div class="text" style="margin-left: 2%;">
-      <h1>Üdvözöljük a Lucky Kávézóban!</h1>
+    <div class="text">
+      <div style="text-align: center;"><h1>Üdvözöljük a Lucky Kávézóban!</h1>
       <div>
-        <img src="img/Americano.jpg" alt="" style="float: right;width: 40%;height: auto;border-radius: 10%;margin-right: 1%;">
       </div>
       <p>A tökéletes hely a kikapcsolódásra és a finom kávé élvezetére.</p>
+      </div>
+      <hr>
+      <div style="float: right;">
+      <img src="img/Americano.jpg" alt="" style="width: 80%;height: auto;border-radius: 10%;margin-right: 1%;">
+      </div>
       <h2>Amit kínálunk vendégeinknek:</h2>
-      <p>    
-          Frissen pörkölt kávékülönlegességek a világ minden tájáról,
-          ízletes desszertek,
-          gyümölcslevek, üdítők és forró italok.
-      </p>
-      <p>Barátságos légkör és kiváló szolgáltatás</p>
+      <ol>
+          <li>Frissen pörkölt kávékülönlegességek a világ minden tájáról.</li><br>
+          <li>Ízletes desszertek.</li><br>
+          <li>Gyümölcslevek, üdítők és forró italok.</li><br>
+      </ol>
+      <p>Barátságos légkör és kiváló szolgáltatás.</p>
       <p>Tökéletes hely a reggeli kávéhoz, a délutáni ebédhez, vagy csak egy rövid pihenőre a nap folyamán.</p>
       <p>Ha nem hiszi, látogasson el hozzánk, és győződjön meg róla maga!</p>
-      <h2>Nyitvatartás:</h2>
-          <li>Hétfő - Péntek: 7:00 - 18:00</li>
+      <h3>Nyitvatartás : </h2>
+          <li>Hétfő - Péntek : 7:00 - 18:00</li>
           <br>
-          <li>Szombat: 8:00 - 14:00</li>
+          <li>Szombat : 8:00 - 14:00</li>
           <br>
-          <li>Vasárnap: Zárva</li>
-      <p><h2>Cím:</h2>
+          <li>Vasárnap : Zárva</li>
+      <p><h3><br>Cím:</h2>
       5200,Törökszentmiklós, Fő tér 12.
-      <h2>Telefonszám:</h2>
+      <h3><br>Telefonszám:</h2>
       +36 30 123-4567
     </p>
     </div>
     
-    <footer>
-      <img src="img/logo_cropped.png" id="logo" >
-        <p>
-        A honlapot üzemelteti a HAPPY COFFEE Kft.
-        <br>
-        <br>
-      Kapcsolat : +36 20 123 4567
-      <br>
-      Email : luckykavezo@gmail.com
-      <br>
-      Telephely : 5200,Törökszentmiklós, Tulipán út 1</p>
-      <br>
-  </footer>
-
+    <footer class="bg-dark py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img src="img/logo_cropped.png" id="logo" class="img-fluid mb-3" alt="Logo">
+            <p class="text-white">A honlapot üzemelteti a HAPPY COFFEE Kft.</p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-4 text-white">Kapcsolat</h5>
+            <p class="text-white">+36 20 123 4567</p>
+            <p class="text-white">luckykavezo@gmail.com</p>
+            <p class="text-white">5200,Törökszentmiklós,Tulipán út 1</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
 </body>
 </html>

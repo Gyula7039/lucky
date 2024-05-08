@@ -1,154 +1,19 @@
 
-body{
-    background-color: blanchedalmond;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
-  li {
+li {
     margin: 0;
     padding: 0;
     display: inline-block;
     margin-right: 20px;
   }
 
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-
-  a:hover {
-    color: #666;
-  }
-
   li a {
     display: block;
-    padding: 8px;
-    color: lightseagreen;
-    background-color: lightgray;
-    opacity: 0.9;
+    padding: 30px;
+    margin: 10px;
+    background-color:lightslategray;
     text-transform: uppercase;
     border-radius: 20%;
-  }
-  
-  #logo{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    width:80px;
-    height:80px;
-  }
-  
-  .navbar{
-    background-image: url(img/coffee-5417663_1280.png);
-    flex-direction: column;
-    background-color: #f0f0f0;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .text {
-    font-size: 18px;
-  }
-  
-  .image {
-    width: 40%;
-    height: auto;
-  }
-  
-  .cim{
     text-align: center;
-  }
-
-  .coffee{
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .coffee-wrapper figure {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .coffee-wrapper figure img {
-    width: 40%; 
-    height: auto; 
-    object-fit: cover;
-    border-radius: 5%;
-  }
-
-  .coffee img {
-    border-radius: 5%;
-    width: 75%;
-    height: auto;
-  }
-
-  figure {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-  
-  figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5%;
-  }
-
-  .coffee-wrapper {
-    width: 100%; 
-    height: 60%; 
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .suti-wrapper{
-    width: 100%; 
-    height: 60%;
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    }
-
-  .kave{
-    width: 20%;
   }
 
   tr td{
@@ -168,28 +33,97 @@ body{
     display: flex;
   }
 
-@media (max-width: 768px) {
- .navbar {
+  figure {
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-basis: 20%;
+  }
+  
+  figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
   }
 
- .footer-container {
-    padding: 0.5em;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  
+  .kepek {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  #logo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    width:80px;
+    height:80px;
+  }
+
+  .navbar{
+    flex-direction: column;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 15px;
 }
 
-@media (max-width: 480px) {
- .navbar {
-    font-size: 0.8em;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   }
 
- .footer-container {
-    font-size: 0.8em;
+  .text {
+    font-size: 18px;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
-}
+  
+  .image {
+    width: 40%;
+    height: auto;
+  }
+  
+  .cim{
+    text-align: center;
+  }
 
-footer{
-  background-color: lightcoral;
-  text-align: center;
-  font-size: 16px;
+  .sticky-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
