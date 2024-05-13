@@ -61,6 +61,15 @@ li {
     object-fit: cover;
   }
 
+figcaption{
+  background-color: aliceblue;
+  font-weight: bold;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 20%;
+  text-align: center;
+}
+
   #logo{
     margin-top: 1%;
     margin-bottom: 1%;
